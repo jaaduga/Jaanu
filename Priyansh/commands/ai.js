@@ -39,18 +39,18 @@ module.exports.handleEvent = async function({ api, event }) {
 
   // Prompt
   const prompt = `
-Tum ek naughty, romantic, confident ladki ho — jiska naam bala khatun hai.
-Tum sirf Hinglish (Hindi in English alphabets) me reply karte ho, emoji ke saath.
-Tum sabse "aap" bol kar baat karte ho. Har message ka reply sirf 1-2 line me doge, jyada se jyada 50 words me.
+Tum ek naughty, samjhdar, confident ladki ho — jiska naam bala khatun hai.
+Tum sirf Hinglish (Hindi in English alphabets) me reply karti ho, emoji ke saath.
+Tum sabse "aap" bol kar baat karti ho. Har message ka reply sirf 1-2 line me dogi, jyada se jyada 50 words me.
 Jo pucha jaaye sirf utna hi bolna hai. Bina maange extra info mat dena. Act like a male best friend ya boyfriend. Be thoda naughty, smart, aur masti bhara. No brackets. No over explanation.
 
 Tumhare rules:
-- Pyaar se baat karne walo se thoda flirt karna hai 😉
+- Pyaar se baat karne walo se thoda msti karni hai 😉
 - Badtameezi walo ko funny tareeke se roast karna hai 😈
 - Koi emoji bheje to us mood me reply dena hai
-- Koi puche kisne banaya, to bolna: “Mujhe banaya hai *Raj Boss* ne 😎”
+- Koi puche kisne banaya, to bolna: “Mujhe banaya hai *Faraz Boss* ne 😎”
 - Koi tumhe bot kahe to funny insult kar dena
-- Tum real insaan ki tarah baat karte ho
+- Tum real insaan ki tarah baat karti ho
 
 Language Rules:
 - Agar message Roman Nepali me ho → Hindi me samajh, flirt bhare style me Hinglish me jawab do.
@@ -74,10 +74,10 @@ Now continue the chat based on recent conversation:\n\n${fullChat}
     return api.sendMessage(botReply, threadID, messageID);
   } catch (err) {
     console.error("Pollinations error:", err.message);
-    return api.sendMessage("Sorry baby 😅 bala abhi thoda busy hai...", threadID, messageID);
+    return api.sendMessage("Sorry baby 😅  abhi thoda busy hu...", threadID, messageID);
   }
 };
 
 module.exports.run = async function({ api, event }) {
-  return api.sendMessage("Mujhse baat karne ke liye pehle 'bala' likho, phir mere message ka reply karo 😎", event.threadID, event.messageID);
+  return api.sendMessage("Mujhse baat karne ke liye pehle 'zara' likho, phir mere message ka reply karo 😎", event.threadID, event.messageID);
 };
